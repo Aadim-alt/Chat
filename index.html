@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostChat - Ephemeral Chat</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GhostChat</h1>
+            <p>A fully static, ephemeral, encrypted chatroom that lives in your browser — messages disappear on refresh or close.</p>
+        </header>
+
+        <div id="room-section">
+            <div id="room-info">
+                <p>Room Code: <span id="room-code"></span></p>
+                <button id="copy-code">Copy Code</button>
+            </div>
+            <div id="join-room">
+                <input type="text" id="join-code" placeholder="Enter room code to join">
+                <button id="join-btn">Join Room</button>
+            </div>
+        </div>
+
+        <div id="chat-section" style="display: none;">
+            <div id="messages"></div>
+            <div id="input-section">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
+            <div id="encryption-toggle">
+                <label>
+                    <input type="checkbox" id="encrypt-toggle"> Encrypt messages
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
