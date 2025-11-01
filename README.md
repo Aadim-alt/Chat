@@ -1,4 +1,4 @@
-# GhostChat
+# GhostChat 1.0
 
 A fully static, ephemeral, encrypted chatroom that lives in your browser — messages disappear on refresh or close.
 
